@@ -5,92 +5,104 @@ import { ExternalLink, Github, Filter } from 'lucide-react';
 const projects = [
   {
     id: 1,
-    title: 'Astrological Website',
+    title: 'Dinetha Astrological Website',
     description: 'A personal astrological website to share horoscope insights and services using React and Tailwind CSS.',
-    image: 'https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+    image: 'images/dinetha.png',
     category: 'Web Development',
-    technologies: ['React', 'Tailwind CSS', 'Node.js', 'MongoDB'],
+    technologies: ['React', 'Tailwind CSS', 'Node.js', 'FireBase'],
     liveUrl: 'https://dinethaastrological.com/',
     githubUrl: '#',
     featured: true
   },
   {
     id: 2,
-    title: 'E-Commerce Platform',
-    description: 'Full-featured online store with payment integration, inventory management, and admin dashboard.',
-    image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-    category: 'E-Commerce',
-    technologies: ['Next.js', 'Stripe', 'PostgreSQL', 'Prisma'],
-    liveUrl: '#',
+    title: 'Share Taxi Sri Lanka – Tourist Shared Taxi Platform',
+    description: 'Sri Lanka’s first shared taxi service designed for tourists, offering affordable ride-sharing routes with real-time booking, secure payments, and a smooth travel experience.',
+    image: 'images/sharetaxi.png',
+    category: 'Taxi Service Platform',
+    technologies: ['React', 'Tailwind CSS', 'Firebase', 'Node.js'],
+    liveUrl: 'https://sharetaxisrilanka.com/',
     githubUrl: '#',
     featured: true
   },
+  
   {
     id: 3,
-    title: 'Tourism Management System',
-    description: 'Travel agency platform with booking system, customer management, and tour package management.',
-    image: 'https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-    category: 'Web Development',
-    technologies: ['React', 'Express', 'MongoDB', 'Socket.io'],
-    liveUrl: '#',
+    title: 'CeyLuxe Journeys – AI-Powered Tourism & Travel Platform',
+    description: 'A modern Sri Lankan travel experience platform featuring AI-based trip planning, destination showcases, tour packages, customer inquiries, and real-time communication. Designed with a clean and immersive UI for tourists seeking personalised travel experiences.',
+    image: 'images/cey.png',
+    category: 'Travel & Tourism Website',
+    technologies: ['React', 'Tailwind CSS', 'Firebase', 'Node.js'],
+    liveUrl: 'https://tourism-website-ceyluxe-r2pf.vercel.app/',
     githubUrl: '#',
-    featured: false
+    featured: false,
+     status: 'ongoing'
   },
+  
   {
     id: 4,
-    title: 'Restaurant Menu App',
-    description: 'Digital restaurant menu system with QR code integration and order management.',
-    image: 'https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-    category: 'Mobile App',
-    technologies: ['React Native', 'Firebase', 'QR Code', 'Payment Gateway'],
-    liveUrl: '#',
+    title: 'AL Glass (Pvt) Ltd – Premium Glass Solutions Website',
+    description: 'A modern, high-performance corporate website for Sri Lanka’s leading glass solutions provider. Showcases products, past projects, and services with a professional UI, integrated quote request system, and smooth user experience.',
+    image: 'images/al.png',
+    category: 'Business Website',
+    technologies: ['React', 'Tailwind CSS', 'Firebase', 'Node.js'],
+    liveUrl: 'https://alglasspvt.com/',
     githubUrl: '#',
     featured: false
   },
+  
   {
     id: 5,
-    title: 'Photography Portfolio',
-    description: 'A stunning photography portfolio with image galleries, client booking, and contact forms.',
-    image: 'https://images.pexels.com/photos/1264210/pexels-photo-1264210.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-    category: 'Portfolio',
-    technologies: ['Vue.js', 'Nuxt.js', 'Cloudinary', 'Netlify'],
-    liveUrl: '#',
+    title: 'Vengase Lifestyle – Modern Fashion E-Commerce Platform',
+    description: 'A stylish and high-performance fashion e-commerce website offering unisex clothing and accessories. Features a sleek UI, advanced search, secure checkout, and a seamless shopping experience.',
+    image: 'images/vengase.png',
+    category: 'E-Commerce',
+    technologies: ['React', 'Tailwind CSS', 'Firebase', 'Node.js'],
+    liveUrl: 'https://vengase.vercel.app/',
     githubUrl: '#',
-    featured: false
+    featured: false,
+    status: 'ongoing'
   },
+  
   {
     id: 6,
-    title: 'Finance Management System',
-    description: 'Personal finance tracker with expense categorization, budget planning, and financial insights.',
-    image: 'https://images.pexels.com/photos/259027/pexels-photo-259027.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-    category: 'Web Development',
-    technologies: ['Angular', 'Spring Boot', 'MySQL', 'Chart.js'],
-    liveUrl: '#',
+    title: 'Luxiris Gems – Premium Gem & Jewellery E-Commerce Platform',
+    description: 'A luxurious and modern online platform for gemstones and jewellery, featuring HD product showcases, blog content, collection pages, secure cart system, and an elegant user experience. Currently under active development.',
+    image: 'images/gem.png',
+    category: 'E-Commerce',
+    technologies: ['React', 'Tailwind CSS', 'Firebase', 'Node.js'],
+    liveUrl: 'https://gem-site-frontend.vercel.app/',
     githubUrl: '#',
-    featured: true
+    featured: true,
+    status: 'ongoing'
   },
+  
   {
     id: 7,
-    title: 'Learning Management System',
-    description: 'Educational platform with course management, student tracking, and interactive learning tools.',
-    image: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-    category: 'Education',
-    technologies: ['React', 'Django', 'PostgreSQL', 'Redis'],
+    title: 'LIMONA – Customizable Fashion E-Commerce Platform',
+    description: 'A premium unisex fashion e-commerce platform offering customizable clothing and accessories. Features a modern UI, product customization modules, secure cart system, and smooth shopping experience tailored for lifestyle brands.',
+    image: 'images/limona.png',
+    category: 'E-Commerce',
+    technologies: ['React', 'Tailwind CSS', 'Firebase', 'Node.js'],
     liveUrl: '#',
     githubUrl: '#',
-    featured: false
+    featured: false,
+    status: 'ongoing'
   },
+  
   {
     id: 8,
-    title: 'Healthcare Management',
-    description: 'Hospital management system with patient records, appointment scheduling, and billing.',
-    image: 'https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-    category: 'Healthcare',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
+    title: 'Ceylon Bliss – AI-Enhanced Travel & Adventure Platform',
+    description: 'A modern Sri Lankan tourism platform offering destination guides, AI-powered trip planning, experience booking, and a fully immersive travel interface designed for international and local travellers.',
+    image: 'images/b.png',
+    category: 'Travel & Tourism Website',
+    technologies: ['React', 'Tailwind CSS', 'Firebase', 'Node.js'],
     liveUrl: '#',
     githubUrl: '#',
-    featured: false
-  }
+    featured: false,
+    status: 'ongoing'
+  },
+  
 ];
 
 const categories = ['All', 'Web Development', 'Mobile App', 'E-Commerce', 'Portfolio', 'Education', 'Healthcare'];
